@@ -1,0 +1,11 @@
+{
+  "ENV_NAME": "development",
+  "API_PORT": "8000",
+  "DATA_BASE": {
+    "NAME": "hoge-db",
+    "HOST": "localhost",
+    "USER_NAME": "root",
+    "PASSWORD": "",
+    "PORT": 3306
+  }
+}
