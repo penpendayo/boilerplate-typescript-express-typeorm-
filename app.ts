@@ -1,10 +1,11 @@
 import express from "express";
 import path from "path";
 import logger from "morgan";
-import config from "config";
+import {config} from "dotenv";
 import indexRouter from "./routes/index";
 
-const PORT = config.get<string>("API_PORT");
+config()
+const PORT = process.env.PORT;
 const app = express();
 (async () => {
   app.use(logger("dev"));
